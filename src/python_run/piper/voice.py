@@ -156,6 +156,8 @@ class PiperVoice:
         if (self.config.num_speakers > 1) and (speaker_id is None):
             # Default speaker
             speaker_id = 0
+        elif self.config.num_speakers == 1:
+            speaker_id = None
 
         sid = None
 
